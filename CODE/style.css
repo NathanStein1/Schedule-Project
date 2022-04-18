@@ -71,7 +71,7 @@ textarea {
 }
 
 
-.table-responsive{
-  display: flex;
-  flex-direction: column;
+th, td {
+  border: 1px;
+  border-style: solid;
 }
