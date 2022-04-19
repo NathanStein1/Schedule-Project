@@ -8,7 +8,7 @@ setInterval(updateTime, 1000)
 
 
 
-
+// localStorage.setItem('todo')
 
 // turn currentTime = x (11) , regular should be moment().format("hh")
 var currentTime = moment().format("HH")
@@ -191,6 +191,8 @@ var save = $('.saveBtn')
 
 save.on('click', function(){
     console.log("Save to local")
+    // localStorage.getItem('todo', textarea.closest() )
 })
 
 
+// To do, set local storage, fix css to make table look like how it should look
