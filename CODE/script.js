@@ -11,7 +11,8 @@ setInterval(updateTime, 1000)
 
 
 // turn currentTime = x (11) , regular should be moment().format("hh")
-var currentTime = 11
+var currentTime = moment().format("HH")
+console.log(currentTime)
 
 // // Parse int from hour class, set up if statements
 
@@ -28,28 +29,13 @@ var twelvePM = $('.12PM')
 var onePM = $('.1PM')
 var twoPM = $('.2PM')
 var threePM = $('.3PM')
+var fourPM= $('.4PM')
+var fivePM= $('.5PM')
 
 // var pastItem = currentTime - 1
 // var currentItem = currentTime
 // var futureItem = currentTime + 1
 
-// FIX? Make it military time then change textcontent?
-// OR set times to moment(time)
-
-
-// ALL AFFECTED
-// if (nummy > currentTime) {
-//     content.addClass("past")}
-
-// if (nummy == currentTime) {
-//     content.addClass("present")
-// }
-
-// if (nummy < currentTime) {
-//     content.addClass("future")
-// }
-
-// Parse int from hour class, set up if statements
 
 
 var nummy1 = parseInt($('.8AM .hour').text())
@@ -57,13 +43,13 @@ var nummy2 = parseInt($('.9AM .hour').text())
 var nummy3 = parseInt($('.10AM .hour').text())
 var nummy4 = parseInt($('.11AM .hour').text())
 var nummy5 = parseInt($('.12PM .hour').text())
-var nummy6 = parseInt($('.1PM .hour').text())
-var nummy7 = parseInt($('.2PM .hour').text())
-var nummy8 = parseInt($('.3PM .hour').text())
+var nummy6=$('.1PM .hour').attr('hour')
+var nummy7=$('.2PM .hour').attr('hour')
+var nummy8=$('.3PM .hour').attr('hour')
+var nummy9=$('.4PM .hour').attr('hour')
+var nummy10=$('.5PM .hour').attr('hour')
 
-// vars to fix the military time problem
-var hour1 = moment("1").format("hh A")
-console.log(hour1)
+
 
 // EIGHT AM AFFECTED
 if (nummy1 > currentTime) {
@@ -150,7 +136,7 @@ if (nummy7 < currentTime) {
 }
 
 // THREE PM AFFECTED
-if (nummy8 > currentTime) {
+if (nummy8 > currentTime){
     threePM.addClass("past")}
 
 if (nummy8 == currentTime) {
@@ -160,6 +146,38 @@ if (nummy8 == currentTime) {
 if (nummy8 < currentTime) {
     threePM.addClass("future")
 }
+// Four PM
+if (nummy9 > currentTime){
+    fourPM.addClass("past")}
+
+if (nummy9 == currentTime) {
+    fourPM.addClass("present")
+}
+
+if (nummy9 < currentTime) {
+    fourPM.addClass("future")
+}
+// Five PM
+if (nummy10 > currentTime){
+    fivePM.addClass("past")}
+
+if (nummy10 == currentTime) {
+    fivePM.addClass("present")
+}
+
+if (nummy10 < currentTime) {
+    fivePM.addClass("future")
+}
+
+
+
+// .closest() //up
+
+// .find() //down
+
+// .sibling() // laterallly
+
+// $('.3PM').find('.hour').attr()
 
 
 
