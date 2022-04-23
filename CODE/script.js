@@ -186,13 +186,114 @@ if (nummy10 < currentTime) {
 
 
 
-// Save button to local storage
-var save = $('.saveBtn')
+// 8 save
+var save1 = $('.saveBtn8')
+var text1 = $('.text8')
 
-save.on('click', function(){
-    console.log("Save to local")
-    // localStorage.getItem('todo', textarea.closest() )
+save1.on('click', function(){
+    
+    localStorage.setItem('todo8', text1.val())
+    
 })
 
+$('.text8').val(localStorage.getItem('todo8'))
 
-// To do, set local storage, fix css to make table look like how it should look
+// 9 save
+var save2 = $('.saveBtn9')
+var text2 = $('.text9')
+
+save2.on('click', function(){
+    
+    localStorage.setItem('todo9', text2.val())
+    
+})
+
+$('.text9').val(localStorage.getItem('todo9'))
+
+// 10 save
+var save3 = $('.saveBtn10')
+var text3 = $('.text10')
+
+save3.on('click', function(){
+    
+    localStorage.setItem('todo10', text3.val())
+
+})
+$('.text10').val(localStorage.getItem('todo10'))
+
+// 11 save
+var save4 = $('.saveBtn11')
+var text4 = $('.text11')
+
+save4.on('click', function(){
+    
+    localStorage.setItem('todo11', text4.val())
+
+})
+$('.text11').val(localStorage.getItem('todo11'))
+
+// 12 save
+var save5 = $('.saveBtn12')
+var text5 = $('.text12')
+
+save5.on('click', function(){
+    
+    localStorage.setItem('todo12', text5.val())
+
+})
+$('.text12').val(localStorage.getItem('todo12'))
+
+// 1 save
+var save6 = $('.saveBtn1')
+var text6 = $('.text1')
+
+save6.on('click', function(){
+    
+    localStorage.setItem('todo1', text6.val())
+
+})
+$('.text1').val(localStorage.getItem('todo1'))
+
+// 2 save
+var save7 = $('.saveBtn2')
+var text7 = $('.text2')
+
+save7.on('click', function(){
+    
+    localStorage.setItem('todo2', text7.val())
+
+})
+$('.text2').val(localStorage.getItem('todo2'))
+
+// 3 save
+var save8 = $('.saveBtn3')
+var text8 = $('.text3')
+
+save8.on('click', function(){
+    
+    localStorage.setItem('todo3', text8.val())
+
+})
+$('.text3').val(localStorage.getItem('todo3'))
+
+// 4 save
+var save9 = $('.saveBtn4')
+var text9 = $('.text4')
+
+save9.on('click', function(){
+    
+    localStorage.setItem('todo4', text9.val())
+
+})
+$('.text4').val(localStorage.getItem('todo4'))
+
+// 5 save
+var save10 = $('.saveBtn5')
+var text10 = $('.text5')
+
+save10.on('click', function(){
+    
+    localStorage.setItem('todo5', text10.val())
+
+})
+$('.text5').val(localStorage.getItem('todo5'))
